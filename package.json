@@ -1,11 +1,32 @@
 {
   "name": "react-native-stylekit",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "A theme-based styling system for React Native & Expo",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   },
+  "keywords": [
+    "react-native",
+    "expo",
+    "styling",
+    "theme",
+    "design-system"
+  ],
   "author": "",
-  "license": "ISC",
-  "description": ""
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-native": ">=0.70.0"
+  },
+  "dependencies": {
+    "deepmerge": "^4.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "*",
+    "@types/react-native": "*",
+    "typescript": "^5.0.0"
+  }
 }
